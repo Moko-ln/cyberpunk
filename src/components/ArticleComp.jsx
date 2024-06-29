@@ -1,11 +1,10 @@
 import React, {useEffect, useState} from 'react'
-import Hero from "../assets/images/hero.webp"
 import Cyberpunk from "../assets/images/cyberpunk.png"
 import PageNotFound from "../pages/PageNotFound";
 
 import { characters } from '../utils/data';
 import {motion} from "framer-motion";
-import {useLocation, useNavigate} from "react-router-dom";
+import {useLocation} from "react-router-dom";
 import {FiArrowRight} from "react-icons/fi";
 import LoadingPage from "./LoadingPage";
 

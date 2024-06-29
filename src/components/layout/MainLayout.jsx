@@ -1,11 +1,10 @@
 import {Outlet} from "react-router-dom";
 import Header from "../partials/Header";
-import Footer from "../partials/Footer";
 import {useEffect, useState} from "react";
 
 function MainLayout () {
 
-    const [items, setItems] = useState([1, 2, 3, 4]);
+    const [items] = useState([1, 2, 3, 4]);
     const [visibleItems, setVisibleItems] = useState(items.length);
 
     useEffect(() => {
@@ -40,7 +39,6 @@ function MainLayout () {
             <main className="w-full">
                 <Outlet/>
             </main>
-            {/*<Footer />*/}
         </div>
     )
 
