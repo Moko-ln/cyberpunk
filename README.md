@@ -16,15 +16,15 @@ To install and run this project locally:
    git clone https://github.com/Moko-ln/cyberpunk.git
 
 ## Navigate to the project directory:
-
+   ```bash
    cd cyberpunk
 
 ## Install dependencies:
-
+   ```bash
    npm install
 
 ## Start the development server:
-
+   ```bash
    npm run start
 
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
