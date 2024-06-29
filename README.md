@@ -12,14 +12,13 @@ Welcome to the showcase site for the main characters of the Netflix series "Cybe
 To install and run this project locally:
 
 ### Clone the repository:
-   ```bash
    git clone https://github.com/Moko-ln/cyberpunk.git
 
 ### Navigate to the project directory:
 
    cd cyberpunk
 
-##" Install dependencies:
+### Install dependencies:
  
    npm install
 
