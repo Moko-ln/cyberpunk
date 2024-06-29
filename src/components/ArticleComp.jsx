@@ -104,13 +104,22 @@ const ArticleComp = () => {
                                 src="/uploads/cyberpunkedgerunners.webm"
                                 type="video/webm"
                             />
+                            {/*<source*/}
+                            {/*    src="/uploads/cyberpunkedgerunners.webm"*/}
+                            {/*    type="video/webm"*/}
+                            {/*/>*/}
+                            {/*<source*/}
+                            {/*    src="/uploads/cyberpunkedgerunners.webm"*/}
+                            {/*    type="video/webm"*/}
+                            {/*/>*/}
+
                         </video>
                     </motion.div>
                 </motion.div>
 
                 {/* Logo Cyberpunk Edgerunners */}
                 <div className="xl:w-custom-width-column w-full">
-                    <div className="">
+                <div className="">
                         <figure className="">
                             <img
                                 src={Cyberpunk}

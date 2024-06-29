@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Loading from '../assets/videos/loading.webm';
+import Loading1 from '../assets/videos/loading.mp4';
+import Loading2 from '../assets/videos/loading.ogg';
 import { useNavigate } from 'react-router-dom';
 
 const Landing = () => {
@@ -27,7 +29,9 @@ const Landing = () => {
                     autoPlay
                     className="absolute w-full h-full overflow-clip object-cover"
                 >
-                    <source src={Loading} />
+                    <source src={Loading}/>
+                    <source src={Loading1}/>
+                    <source src={Loading2}/>
                 </video>
             </article>
         )
