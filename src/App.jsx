@@ -1,19 +1,13 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
 // import CSS
 import './assets/css/index.scss';
-
-// Import pages
-import Home from './pages/Home';
-import PageNotFound from './pages/PageNotFound';
+import {AnimateRoutes} from "./routes/AnimateRoutes";
 
 export default function App() {
 
   return (
-    <Router>
-      <Routes>
-          <Route path="/" element={<Home />}></Route>
-          <Route path="/*" element={<PageNotFound />} exact="true" />
-      </Routes>
+    <Router basename = {process.env.PUBLIC_URL}>
+        <AnimateRoutes />
     </Router>
   )
 }
