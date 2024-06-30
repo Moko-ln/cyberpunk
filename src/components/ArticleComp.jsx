@@ -104,14 +104,14 @@ const ArticleComp = () => {
                                 src="/uploads/cyberpunkedgerunners.webm"
                                 type="video/webm"
                             />
-                            {/*<source*/}
-                            {/*    src="/uploads/cyberpunkedgerunners.webm"*/}
-                            {/*    type="video/webm"*/}
-                            {/*/>*/}
-                            {/*<source*/}
-                            {/*    src="/uploads/cyberpunkedgerunners.webm"*/}
-                            {/*    type="video/webm"*/}
-                            {/*/>*/}
+                            <source
+                                src="/uploads/cyberpunk.mp4"
+                                type="video/webm"
+                            />
+                            <source
+                                src="/uploads/cyberpunk.ogg"
+                                type="video/ogg"
+                            />
 
                         </video>
                     </motion.div>
