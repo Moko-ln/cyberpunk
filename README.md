@@ -23,7 +23,7 @@ Welcome to the showcase site for the main characters of the Netflix series "Cybe
 ## Technologies utilisées
 
 - React
-- Tailwind
+- TailwindCss
 
 ## Installation
 
@@ -31,6 +31,7 @@ Welcome to the showcase site for the main characters of the Netflix series "Cybe
 
 ```bash
 git clone https://github.com/Moko-ln/cyberpunk.git
+
 cd cyberpunk
 
 2. Installez les dépendances :
