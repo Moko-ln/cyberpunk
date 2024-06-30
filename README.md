@@ -30,7 +30,7 @@ Welcome to the showcase site for the main characters of the Netflix series "Cybe
 1. Clonez le dépôt :
 
 ```bash
-git git clone https://github.com/Moko-ln/cyberpunk.git
+git clone https://github.com/Moko-ln/cyberpunk.git
 cd cyberpunk
 
 2. Installez les dépendances :
