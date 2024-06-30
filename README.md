@@ -1,43 +1,43 @@
-# Cyberpunk Edgerunners Showcase
+#  Cyberpunk Edgerunners Showcase
 
 Welcome to the showcase site for the main characters of the Netflix series "Cyberpunk Edgerunners". This project is built with React.
+
+## Table des matières
+
+- [Aperçu](#aperçu)
+- [Feature](#feature)
+- [Technologies utilisées](#technologies-utilisées)
+- [Installation](#installation)
+- [Structure du projet](#structure-du-projet)
 
 ## Features
 
 - Display of main characters with descriptions and images.
 - Dynamic and responsive user interface.
 
+## Aperçu
+
+![david](https://github.com/Moko-ln/cyberpunk/assets/120736517/903de1da-6b15-4fbc-a16a-98357857896c)
+
+
+## Technologies utilisées
+
+- React
+- Tailwind
+
 ## Installation
 
-To install and run this project locally:
+1. Clonez le dépôt :
 
-### Clone the repository:
-   git clone https://github.com/Moko-ln/cyberpunk.git
+```bash
+git git clone https://github.com/Moko-ln/cyberpunk.git
+cd cyberpunk
 
-### Navigate to the project directory:
+2. Installez les dépendances :
 
-   cd cyberpunk
+npm install
 
-### Install dependencies:
- 
-   npm install
+3. Démarrez le serveur de développement :
 
-### Start the development server:
+npm run start
 
-   npm run start
-
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-## Technologies Used
-
-- **React**: A JavaScript library for building user interfaces.
-- **Tailwind**: For styling the web pages.
-
-## License
-
-This project is licensed under the MIT License.
-
-Thank you for visiting the Cyberpunk Edgerunners Showcase project!
