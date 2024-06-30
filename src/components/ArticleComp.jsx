@@ -97,21 +97,21 @@ const ArticleComp = () => {
                         <video
                             controls
                             className="xxl:h-[460px] xl:h-auto w-full object-fit overflow-clip"
-
+                            src="/uploads/cyberpunk.mp4"
                             poster={`/uploads/cyberpunk-edgerunners.webp`}
                         >
-                            <source
-                                src="/uploads/cyberpunkedgerunners.webm"
-                                type="video/webm"
-                            />
-                            <source
-                                src="/uploads/cyberpunk.mp4"
-                                type="video/webm"
-                            />
-                            <source
-                                src="/uploads/cyberpunk.ogg"
-                                type="video/ogg"
-                            />
+                            {/*<source*/}
+                            {/*    src="/uploads/cyberpunkedgerunners.webm"*/}
+                            {/*    type="video/webm"*/}
+                            {/*/>*/}
+                            {/*<source*/}
+                            {/*    src="/uploads/cyberpunk.mp4"*/}
+                            {/*    type="video/webm"*/}
+                            {/*/>*/}
+                            {/*<source*/}
+                            {/*    src="/uploads/cyberpunk.ogg"*/}
+                            {/*    type="video/ogg"*/}
+                            {/*/>*/}
 
                         </video>
                     </motion.div>

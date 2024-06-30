@@ -27,11 +27,12 @@ const Landing = () => {
                     muted
                     preload="auto"
                     autoPlay
+                    src={ Loading1 }
                     className="absolute w-full h-full overflow-clip object-cover"
                 >
-                    <source src={Loading} type="video/webm" />
-                    <source src={Loading1} type="video/mp4" />
-                    <source src={Loading2} type="video/ogg" />
+                    {/*<source src={Loading} type="video/webm" />*/}
+                    {/*<source src={Loading1} type="video/mp4" />*/}
+                    {/*<source src={Loading2} type="video/ogg" />*/}
                 </video>
             </article>
         )
