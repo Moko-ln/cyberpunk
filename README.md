@@ -8,7 +8,6 @@ Welcome to the showcase site for the main characters of the Netflix series "Cybe
 - [Feature](#feature)
 - [Technologies utilisées](#technologies-utilisées)
 - [Installation](#installation)
-- [Structure du projet](#structure-du-projet)
 
 ## Features
 
