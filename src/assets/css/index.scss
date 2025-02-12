@@ -69,3 +69,105 @@ a {
     opacity: 0.7;
 }
 
+.glitch {
+    position: relative;
+    display: inline-block;
+    font-size: 4rem;
+    font-weight: 900;
+    color: #fff;
+    text-transform: uppercase;
+    text-shadow: 0.1em 0 0 rgba(255,0,0,.75),
+                 -0.05em -0.05em 0 rgba(0,255,0,.75),
+                 0.05em 0.05em 0 rgba(0,0,255,.75);
+    animation: glitch-main 1.5s infinite;
+    overflow: hidden;
+}
+
+.glitch::before,
+.glitch::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    mix-blend-mode: difference;
+}
+
+.glitch::before {
+    animation: glitch-1 0.3s infinite steps(5, end);
+    color: #ff00c1;
+    z-index: -1;
+}
+
+.glitch::after {
+    animation: glitch-2 0.3s infinite steps(5, end);
+    color: #00fff9;
+    z-index: -2;
+}
+
+@keyframes glitch-main {
+    0%, 100% {
+        text-shadow: 0.1em 0 0 rgba(255,0,0,.75),
+                     -0.05em -0.05em 0 rgba(0,255,0,.75),
+                     0.05em 0.05em 0 rgba(0,0,255,.75);
+    }
+    50% {
+        text-shadow: -0.1em -0.1em 0 rgba(255,0,0,.75),
+                     0.05em 0 0 rgba(0,255,0,.75),
+                     -0.05em 0.05em 0 rgba(0,0,255,.75);
+    }
+}
+
+@keyframes glitch-1 {
+    0% { transform: translate(-5px, 5px); }
+    50% { transform: translate(5px, -5px); }
+    100% { transform: translate(-5px, 5px); }
+}
+
+@keyframes glitch-2 {
+    0% { transform: translate(5px, -5px); }
+    50% { transform: translate(-5px, 5px); }
+    100% { transform: translate(5px, -5px); }
+}
+
+.glitch:hover {
+    animation: electric-pulse 0.3s infinite, color-shift 2s infinite, glitch-main 0.8s infinite;
+}
+
+@keyframes electric-pulse {
+    0% { filter: drop-shadow(0 0 3px #00fff9); }
+    50% { filter: drop-shadow(0 0 20px #ff00c1) brightness(1.7); }
+    100% { filter: drop-shadow(0 0 3px #00fff9); }
+}
+
+@keyframes color-shift {
+    0%, 100% { filter: hue-rotate(0deg); }
+    50% { filter: hue-rotate(200deg); }
+}
+
+/* Effet de scanlines (optionnel) */
+body::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: repeating-linear-gradient(
+        0deg,
+        rgba(255, 0, 0, 0.1) 0px,
+        rgba(0, 4, 251, 0.1) 1px,
+        transparent 1px,
+        transparent 2px
+    );
+    pointer-events: none;
+    z-index: 999;
+    animation: scanline 3s linear infinite;
+}
+
+@keyframes scanline {
+    from { transform: translateY(-100%); }
+    to { transform: translateY(100%); }
+}

@@ -79,21 +79,35 @@ const ArticleComp = () => {
                     
                         {/* Background image */}
                         <motion.div 
-                        className="fixed left-0 top-0 h-full w-full"
-                        initial={{ opacity: 0, scale: 1.05 }}
-                        animate={{ opacity: 1, scale: 1 }}
-                        exit={{ opacity: 0, scale: 1.05, transition: { duration: 0.3, delay: 0.2, ease: "easeInOut" } }}
-                        transition={{ type: "spring", damping: 50, stiffness: 100, ease: "linear" }}    
-                    >
-                        <motion.figure className="h-full w-full">
-                            <img
-                                src={`/uploads/${data.image}.webp`}
-                                alt=""
-                                className="h-full w-full object-cover brightness-75"
-                            />
-                        </motion.figure>
+                            className="fixed left-0 top-0 h-full w-full"
+                            initial={{ opacity: 0, scale: 1.05 }}
+                            animate={{ opacity: 1, scale: 1 }}
+                            exit={{ opacity: 0, scale: 1.05, transition: { duration: 0.3, delay: 0.2, ease: "easeInOut" } }}
+                            transition={{ type: "spring", damping: 50, stiffness: 100, ease: "linear" }}    
+                        >
+                            <motion.figure className="relative h-full w-full">
+                                <img
+                                    src={`/uploads/${data.image}.webp`}
+                                    alt={data.name}
+                                    className="glitch h-full w-full object-cover brightness-75"
+                                />
+                            </motion.figure>
+
+                            <div className="glitch__layer w-full h-full absolute top-0 left-0"
+                                style={{
+                                    backgroundImage: `url(uploads/${data.image}.webp)`,
+                                    backgroundSize: "cover",
+                                    backgroundPosition: "center",
+                                    backgroundRepeat: "no-repeat",
+                                }}
+                            >
+                                <div className="glitch__layer"></div>
+                                <div className="glitch__layer"></div>
+                                <div className="glitch__layer"></div>
+                            </div>
+                        
                         </motion.div>
-                </Container>
+                    </Container>
                 </article>
             }
         </>
