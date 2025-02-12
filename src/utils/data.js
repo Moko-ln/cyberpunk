@@ -32,3 +32,30 @@ export const characters = [
         poster:"mainposter"
     }
 ]
+
+export const menus = [
+    {
+        id:1,
+        title:"David Martinez",
+        link:"davidmartinez",
+        slug:"davidmartinez"        
+    },
+    {
+        id:2,
+        title:"Lucy",
+        link:"lucy",
+        slug:"lucy"
+    },
+    {
+        id:3,
+        title:"Sasha",
+        link:"sasha",
+        slug:"sasha"
+    },
+    {
+        id:4,
+        title:"Main",
+        link:"main",
+        slug:"main" 
+    }
+]  

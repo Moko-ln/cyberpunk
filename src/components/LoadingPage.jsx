@@ -1,9 +1,7 @@
-const LoadingPage = () => {
+export const LoadingPage = () => {
     return (
-        <article className="min-h-screen w-full flex items-center justify-center bg-black">
-            Loading...
+        <article className="w-screen min-h-screen flex items-center justify-center bg-black">
+            <h2 className="text-white text-sm font-medium">Chargement...</h2>
         </article>
     );
 };
-
-export default LoadingPage;

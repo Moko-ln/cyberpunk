@@ -13,8 +13,8 @@ module.exports = {
     },
     extend: {
       spacing:{
-        'custom-width':'calc(100vw - (6vw*2))',
-        'custom-width-column':'calc((100vw - (6vw*2)) / 3)'
+        'custom-width':'calc(100vw - (8vw*2))',
+        'custom-width-column':'calc((100vw - (9vw*2)) / 3)'
       }
     },
   },
